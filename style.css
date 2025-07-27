@@ -1,0 +1,187 @@
+/* Reset default spacing and enable border-box layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+  --card-text-glow: #e0e0e0;
+}
+
+/* Center content on the page */
+body {
+  height: 100vh;
+  background-color: rgb(38, 69, 96);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main card container style */
+.container {
+  width: 400px;
+  height: 250px;
+  background-color: #8e5252;
+  padding: 0 30px 0 50px;
+  border-radius: 15px;
+  color: var(--card-text-glow);
+}
+
+/* Bank logo */
+.logo img {
+  width: 150px;
+}
+
+/* Chip + NFC logo row */
+.logo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo2 img:first-child {
+  width: 70px;
+}
+
+/* All images in logo2 */
+.logo2 img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Card number section */
+.card-number {
+  margin-top: 10px;
+}
+
+.card-number h5 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Valid thru section */
+.valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.valid .valid-text {
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.valid .valid-date {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Cardholder name and Visa logo */
+.cardholder-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardholder-name p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Card type (e.g. Platinum) */
+.card-type {
+  display: flex;
+  justify-content: end;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+    height: 210px;
+  }
+
+  .logo2 img:first-child {
+    width: 50px;
+  }
+
+  .logo2 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-number h5 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .valid .valid-date {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .valid .valid-text {
+    font-size: 6px;
+    font-weight: 300;
+  }
+
+  .cardholder-name p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .cardholder-name h1 {
+    font-size: 20px;
+  }
+
+  .card-type {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 310px) {
+  .container {
+    width: 350px;
+    height: 190px;
+  }
+
+  .logo2 img:first-child {
+    width: 50px;
+  }
+
+  .logo2 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-number h5 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .valid .valid-date {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .cardholder-name p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .cardholder-name h1 {
+    font-size: 18px;
+  }
+
+  .card-type {
+    font-size: 8px;
+  }
+}
